@@ -1,0 +1,10 @@
+{
+  "bindings": [
+    {
+      "name": "ctx",
+      "type": "orchestrationTrigger",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

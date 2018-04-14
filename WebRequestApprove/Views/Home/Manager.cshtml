@@ -1,0 +1,27 @@
+﻿@model IEnumerable<VacationRequest>
+
+@{
+    ViewData["Title"] = "Manager";
+}
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName) 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromDate, "{0:MM/dd/yyyy}") 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToDate, "{0:MM/dd/yyyy}") 
+            </td>
+            <td>
+            <td>
+                @Html.ActionLink("Approve", "Approve", item) |
+                @Html.ActionLink("Reject", "Reject", item) |
+            </td>
+        </tr>
+    }
+</table>

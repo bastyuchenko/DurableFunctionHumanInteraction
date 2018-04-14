@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "eventData",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "approved-queue",
+      "connection": "storeaccdemo_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
